@@ -9,10 +9,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 /**
- * This program is used to test the Counter class.  It constructs the a counter 
+ * This program is used to test the Counter class. It constructs the a counter
  * using both constructors provided by the Counter class.
  *
- * <p/> Bugs: No known bugs
+ * <p/>
+ * Bugs: No known bugs
  * 
  * @author hpaul
  *

@@ -1,3 +1,22 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+// 
+//  Project:  Lab02
+//  File:     CreditCard.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * This program keeps track of a users credit card limit and balance
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
 
 public class CreditCard
 {
@@ -5,10 +24,10 @@ public class CreditCard
 	private double creditLimit;
 	private double balance;
 	
-	public void CreditCard(String number, double limit)
+	public CreditCard(String number, double limit)
 	{
 		accountNumber = number;
-		limit = creditLimit;
+		creditLimit = limit;
 		balance = 0;
 	}
 
@@ -19,19 +38,22 @@ public class CreditCard
 
 	public double getCreditLimit() 
 	{
-		return limit;
+		return creditLimit;
 	}
 
-	public double getBalance(double theBalance) 
+	public double getBalance() 
 	{
 		return balance;
 	}
 	
 	public void charge(double amount)
 	{
-		balance = balance + amount;
-		
-		return balance;
+		balance += amount;
+	}
+	
+	public String toString()
+	{
+		return "Credit Card [number = " + accountNumber + ", bal = " + balance + ", limit = " + creditLimit + "]\n";
 	}
 	
 }
