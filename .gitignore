@@ -6,6 +6,7 @@
 *.recommenders
 *.zip
 *.pdf
+*.gitignore
 FormatterTemplate.xml
 
 # eclipse specific git ignore
