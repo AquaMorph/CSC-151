@@ -7,7 +7,10 @@
 *.zip
 *.pdf
 *.gitignore
+*.idea
+*.iml
 FormatterTemplate.xml
+Test/
 
 # eclipse specific git ignore
 *.pydevproject
