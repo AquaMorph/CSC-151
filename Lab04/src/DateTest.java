@@ -1,7 +1,31 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2014
+//  Section:  0001
+// 
+//  Project:  Lab04
+//  File:     DateTest.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ *  This a test for class that represents a date given the month and the day of 
+ *  the month. For the given date, this class provides a method for determining 
+ *  the season in the northern hemisphere for the date.
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
 
 public class DateTest {
 

@@ -1,3 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2014
+//  Section:  0001
+// 
+//  Project:  Lab04
+//  File:     RomanNumeralHelper.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ *  A program that  get input of a user in roman numerals and converts it to
+ *  an interger.
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
+
 import java.util.Scanner;
 
 public class RomanNumeralHelper

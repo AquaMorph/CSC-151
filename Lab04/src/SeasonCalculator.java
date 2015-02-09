@@ -1,26 +1,28 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Course:   CSC 151 Spring 2014
-//  Section:  (your section number)
+//  Section:  0001
 // 
 //  Project:  Lab04
 //  File:     SeasonCalculator.java
 //  
-//  Name:     (your first and last name)
-//  Email:    (your Wake Tech Email Address)
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
 ////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ *  A program gets the month and the day and returns the season of the day
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
 
 import java.util.Scanner;
 
-/**
- * (Insert a comment that briefly describes the purpose of this class
- * definition.)
- *
- * <p/>
- * Bugs: (List any known issues or unimplemented features here)
- * 
- * @author (Insert your first and last name)
- *
- */
 public class SeasonCalculator
 {
 	public static void main(String[] args)
