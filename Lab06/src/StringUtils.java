@@ -24,10 +24,6 @@
 public class StringUtils
 {
 
-	public StringUtils()
-	{
-	}
-
 	public static String padLeft(String orig, int n)
 	{
 		for (int i = 0; i < n; i++)

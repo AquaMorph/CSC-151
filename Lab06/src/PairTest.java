@@ -1,33 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2014
+//  Section:  0001
+// 
+//  Project:  Lab06
+//  File:     PairTest.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * 
+ *  A program that test the class Pair. Asks the user to enter to number and
+ *  then returns the average, distance, maximum and minimum of two
+ *  numbers
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
 
-import static org.junit.Assert.*;
+import java.util.Scanner;
 
-import org.junit.Test;
+public class PairTest
+{
 
-public class PairTest {
+	public static void main(String[] args)
+	{
+		double num1, num2;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter the first number: ");
+		num1 = scanner.nextDouble();
+		System.out.print("Enter the second number: ");
+		num2 = scanner.nextDouble();
+		Pair pair = new Pair(num1, num2);
 
-	@Test
-	public void testGetAverage() {
-		Pair p = new Pair(10.0, 15.0);
-		assertEquals(p.getAverage(), 12.5, .001);
-	}
-
-	@Test
-	public void testGetDistance() {
-		Pair p = new Pair(10.0, 15.0);
-		assertEquals(p.getDistance(), 5, .001);
-	}
-
-	@Test
-	public void testGetMaximum() {
-		Pair p = new Pair(10.0, 15.0);
-		assertEquals(p.getMaximum(), 15, .001);
-	}
-
-	@Test
-	public void testGetMinimum() {
-		Pair p = new Pair(10.0, 15.0);
-		assertEquals(p.getMinimum(), 10, .001);
+		System.out.println("\nAverage: " + pair.getAverage());
+		System.out.println("Distance: " + pair.getDistance());
+		System.out.println("Maximum: " + pair.getMaximum());
+		System.out.println("Minimum: " + pair.getMinimum());
+		scanner.close();
 	}
 
 }
