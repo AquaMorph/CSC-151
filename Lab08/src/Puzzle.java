@@ -1,3 +1,13 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab08
+//  File:     Puzzle.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
 
 /**
  * A puzzle is used to represent a word puzzle. A puzzle contains a solution and
@@ -48,7 +58,13 @@ public class Puzzle
 	 */
 	public Puzzle(String theSolution)
 	{
-		
+		solution = theSolution;
+		puzzle = new StringBuilder(theSolution);
+		for (int i = 0; i < puzzle.length(); i++) {
+		    if (puzzle.charAt(i) != ' ' && puzzle.charAt(i) != 39) {
+		    	puzzle.setCharAt(i, '-');
+		    }
+		}
 	}
 
 	/**
@@ -68,6 +84,15 @@ public class Puzzle
 	public int guessLetter(char letter)
 	{	
 		int count = 0;
+		for(int i = 0; i < puzzle.length(); i++)
+		{
+			if(puzzle.charAt(i) != Character.toUpperCase(letter) && solution.charAt(i) == Character.toUpperCase(letter))
+			{
+				puzzle.setCharAt(i,Character.toUpperCase(letter));
+				count++;
+			}
+		}
+				
 		
 		return count;
 	}
@@ -82,7 +107,7 @@ public class Puzzle
 	 */
 	public String getPuzzle()
 	{
-		return "";
+		return puzzle.toString();
 	}
 
 	/**
@@ -96,7 +121,8 @@ public class Puzzle
 	 */
 	public boolean solvePuzzle(String guess)
 	{
-		return false;
+		if(guess.toUpperCase().equals(solution.toUpperCase())) return true;
+		else return false;
 	}
 
 }
