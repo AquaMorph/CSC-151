@@ -1,18 +1,30 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab09
+//  File:     BoxOfficeApp.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ * Client for agents to order tickets from.
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
 
 package edu.waketech.csc151.lab09;
 
 import java.util.Scanner;
 
-
-/**
- * 
- * Box office console application used to sell tickets.
- *
- * <p/> Bugs: None
- * 
- * @author CSC151
- *
- */
 public class BoxOfficeApp
 {
 	
@@ -53,7 +65,7 @@ public class BoxOfficeApp
 					{
 						TicketType ticketType = TicketType.values()[type - 1];
 						
-						//TODO - use the agent, quantity, and ticket type to buy a ticket
+						agent.sale(ticketType, quantity);
 					}
 					else
 					{

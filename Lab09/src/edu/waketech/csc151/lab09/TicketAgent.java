@@ -1,3 +1,26 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab09
+//  File:     TicketAgent.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ * A class that handles ticket orders by an agent
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
+
 package edu.waketech.csc151.lab09;
 
 public class TicketAgent
@@ -10,11 +33,11 @@ public class TicketAgent
 	{
 		name = agentName;
 	}
-	
-	public void sale(TicketType ticket)
+
+	public void sale(TicketType ticket, int quantity)
 	{
-		numberSold++;
-		sales += ticket.getPrice();
+		numberSold += quantity;
+		sales += ticket.getPrice()*quantity;
 	}
 
 	public String getName()
@@ -22,7 +45,7 @@ public class TicketAgent
 		return name;
 	}
 
-	public double getNumberSold()
+	public int getNumberSold()
 	{
 		return numberSold;
 	}

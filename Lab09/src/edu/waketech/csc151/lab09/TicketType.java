@@ -1,3 +1,26 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab09
+//  File:     TicketType.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ * Handles prices of tickets
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
+
 package edu.waketech.csc151.lab09;
 
 public enum TicketType
