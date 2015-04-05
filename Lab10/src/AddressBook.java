@@ -1,3 +1,26 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab10
+//  File:     AddressBook.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ * A class that handles multiple contacts and places them in lists.
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
+
 import java.util.ArrayList;
 
 public class AddressBook
@@ -19,7 +42,10 @@ public class AddressBook
 	{
 		ArrayList<String> emailList = new ArrayList<>();
 
-		// TODO - Complete this method by adding the email of each contact to the emailList
+		for (int i = 0; i < contacts.size(); i++)
+		{
+			emailList.add(contacts.get(i).getEmail());
+		}
 
 		return emailList;
 	}
@@ -28,10 +54,24 @@ public class AddressBook
 	{
 		ArrayList<String> friendList = new ArrayList<>();
 
-		// TODO - Complete this method by adding the string representation of each
-		//        friend in the contacts list to the friend list.
-		//        Use the instanceof operator to determine if a contact is a Friend
+		for (int i = 0; i < contacts.size(); i++)
+		{
+			if (contacts.get(i) instanceof Friend)
+				friendList.add(contacts.get(i).toString());
+		}
 
 		return friendList;
+	}
+
+	public String toString()
+	{
+		String text = "";
+		for (int i = 0; i < contacts.size(); i++)
+		{
+			if (i > 0)
+				text += "\n";
+			text += contacts.get(i).toString();
+		}
+		return text;
 	}
 }
