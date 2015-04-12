@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * This program creates a list of Person objects, sorts the list using the
@@ -33,11 +34,27 @@ public class PersonSorter
 
 		Collections.sort(people);
 		
+		System.out.println("Sorted");
 
 		// PRINT THE LIST OF PEOPLE AFTER SORTING
 		for (Person person : people)
 		{
 			System.out.println(person);
+		}
+		
+		Person alice = new Person("alice", 65);
+		Person bob = new Person("bob", 72);
+		if(alice.compareTo(bob) > 0)
+		{
+		System.out.println(alice + " is greater than " + bob);
+		}
+		else if(alice.compareTo(bob) < 0)
+		{
+		System.out.println(alice + " is less than " + bob);
+		}
+		else
+		{
+		System.out.println(alice + " & " + bob + " are the same");
 		}
 	}
 }

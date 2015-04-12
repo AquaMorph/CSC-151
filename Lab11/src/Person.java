@@ -1,14 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab11
+//  File:     Person.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
 
 /**
  * 
- * This class represents a person who has a name and an age.
+ * A class for tracking people's name and age
  *
- * <p/> Bugs: None
+ *
+ * <p/>
+ * Bugs: No known bugs
  * 
- * @author hpaul
+ * @author Christian Colglazier
  *
  */
-public class Person
+
+public class Person implements Comparable<Object>
 {
 	/** The person's name */
 	private int age;
@@ -88,6 +101,15 @@ public class Person
 	{
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
+
+	@Override
+	public int compareTo(Object compare)
+	{
+		int compareage=((Person)compare).getAge();
+		if(this.age==compareage)
+			return this.name.compareTo(((Person)compare).getName());
+		else
+			return this.age-compareage;
+	}
 	
-	public Com
 }
