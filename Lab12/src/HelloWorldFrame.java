@@ -60,10 +60,9 @@ public class HelloWorldFrame extends JFrame implements ActionListener
 		JPanel greetingPanel = new JPanel();
 
 		// Titled borders
-		TitledBorder title;
-		title = BorderFactory.createTitledBorder("Greeting");
+		TitledBorder title = BorderFactory.createTitledBorder("Greeting");
 		greetingPanel.setBorder(title);
-
+		
 		// Handles text
 		greeting = new JLabel("");
 		greetingPanel.add(greeting);
