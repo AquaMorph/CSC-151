@@ -1,3 +1,26 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Course:   CSC 151 Spring 2015
+//  Section:  0001
+// 
+//  Project:  Lab13
+//  File:     FileCopy.java
+//  
+//  Name:     Christian Colglazier
+//  Email:    cacoglazier@waketech.edu
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 
+ * Copies a text file to a new text file.
+ *
+ *
+ * <p/>
+ * Bugs: No known bugs
+ * 
+ * @author Christian Colglazier
+ *
+ */
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
